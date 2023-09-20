@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>College Application</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Prediciting your Save,reach and middle ground college </h1>
+        <a href="index.html">Home page</a></li>
+
+        <form id="collegeForm">
+            <div class="form-field">
+                <label for="gpa">GPA:</label>
+                <div class="custom-input">
+                    <input type="number" step="0.01" id="gpa" name="gpa" required>
+                </div>
+                <div class="error" id="errorGpa"></div>
+            </div>
+
+            <div class="form-field">
+                <label for="scoreType">Choose Score Type:</label>
+                <div class="custom-input">
+                    <select id="scoreType" name="scoreType" required>
+                        <option value="SAT">SAT</option>
+                        <option value="ACT">ACT</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-field">
+                <label for="score">Enter Your Score:</label>
+                <div class="custom-input">
+                    <input type="number" id="score" name="score" required>
+                </div>
+                <div class="error" id="errorScore"></div>
+            </div>
+
+            <div class="form-field">
+                <label for="criminalRecord">Do you have a criminal record?</label>
+                <div class="custom-checkbox">
+                    <input type="checkbox" id="criminalRecord" name="criminalRecord">
+                </div>
+            </div>
+
+            <div class="form-field">
+                <label for="cost">Expected Cost of Attendance:</label>
+                <div class="custom-input">
+                    <input type="number" id="cost" name="cost" required>
+                </div>
+                <div class="error" id="errorCost"></div>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
